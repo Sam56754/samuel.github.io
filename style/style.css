@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 150vh;
+}
+.first {
+    width: 100%;
+    background: rgba(90, 91, 92, 0.63);
+}
+
+nav {
+    display: flex;
+    align-items: center; /* Vertically center items */
+    justify-content: space-between; /* Space between logo and menu */
+    padding: 10px 20px; /* Add some padding around the nav */
+}
+
+.logo {
+    width: 118px; /* Maintain logo size */
+    height: 100px;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    background: linear-gradient(to right, red, blue);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 20px; /* Space between logo and heading */
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0; /* Remove padding */
+}
+
+nav ul li {
+    margin: 0 7px; /* Adjust margin for spacing */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px 15px; /* Add padding for clickable area */
+    transition: color 0.3s, background-color 0.3s; /* Smooth transition */
+}
+
+nav ul li a:hover {
+    color: white; /* Change text color on hover */
+    background-color: rgb(118, 122, 119); /* Add background color on hover */
+    border-radius: 5px; /* Rounded corners for hover effect */
+}
+
+a:focus {
+    color: red;
+}
+
+#current {
+    color: green;
+    font-weight: bold; /* Make current link bold */
+}
+
+.intro {
+    display: flex;
+    align-items: flex-start;
+    background-color: aliceblue;
+}
+.mission {
+    background-color: aliceblue;
+    display: flex;
+    align-items: flex-start;
+}
+h2{
+    padding-left: 3%;
+    font-size: medium;
+    text-transform: uppercase;
+    background-color: rgb(191, 221, 247);
+
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+    padding: 10px;
+}
+
+#text {
+    border: none;
+    text-align: left;
+    text-indent: 30px;
+    margin-right: 20px;
+    margin-left: 2px;
+}
+
+#first {
+    width: 250px;
+    height: 250px;
+    border-radius: 59%;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.box img{
+    width: 90px;
+    height: 90px;
+}
+.container {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping of boxes */
+    justify-content: space-between; /* Space between boxes */
+}
+.container .box{
+    text-align: center;
+    width: 24%;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+#explain{
+    text-align: center;
+    text-indent: 0px;
+}
+#rocket2{
+    width: 10%;
+    height: 10%;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px; 
+}
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.back-to-top {
+    display: inline-block; 
+    margin-top: 10px; 
+    padding: 10px 15px;
+    background-color: #007BFF; 
+    color: white; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.back-to-top:hover {
+    background-color: #0056b3;
+}
+.values ul{
+    margin: 20px 0px 20px 25px;
+}
+#profile {
+    border-radius: 50%;
+    width: 190px;
+    height: 190px;
+}
+.main{
+    width: 60%;
+}
+aside{
+    width: 40%;
+    float: right;
+    border-radius: 10%;
+    background-color: bisque;
+    margin-top: 10px;
+}
+aside #head{
+    background-color: rgb(232, 73, 29);
+    color: whitesmoke;
+    border-radius: 10%;
+    text-align: center;
+}
+
+
+/*contacts page*/
+.contact-content {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.contact-content h2, .contact-content h3 {
+    color: #555;
+}
+
+.contact-details p, .contact-content form label {
+    margin: 10px 0;
+}
+
+.contact-content form {
+    margin-top: 20px;
+}
+
+.contact-content input, .contact-content textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-content button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-content button:hover {
+    background-color: #0056b3;
+}
+
+.social-media a {
+    margin: 0 30px;
+}
+
+
+/*hire form*/
+.hire-form-content {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.hire-form-content h2 {
+    color: #555;
+}
+
+.hire-form-content form {
+    margin-top: 20px;
+}
+
+.hire-form-content form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.hire-form-content input, 
+.hire-form-content textarea, 
+.hire-form-content select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.hire-form-content button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hire-form-content button:hover {
+    background-color: #0056b3;
+}
+#confirmation{
+    display: none;
+    font-size: 1rem;
+    margin-top: 15px;
+    border: 1px solid #28a745;
+    padding: 10px;
+    background-color: #e9f9ee;
+    color: #28a745;
+    border-radius: 5px;
+}

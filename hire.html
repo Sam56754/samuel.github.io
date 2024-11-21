@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/logo2.png">
+    <link rel="stylesheet" href="/style/style.css">
+    <title>Hire Us - Silver-Works</title>
+</head>
+<body>
+    <div class="first">
+        <nav>
+            <img src="/images/logo2.png" alt="logo here" width="118px" height="100px" class="logo">
+            <h1>Silver-Works Company</h1>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="aboutUs.html">ABOUT US</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="hire.html" id="current">HIRE US</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="hire-form-content">
+        <h2>Hire Us</h2>
+        <p>Fill out the form below to let us know your requirements, and we’ll get back to you promptly!</p>
+
+        <form form id="hire-form" method="post" enctype="multipart/form-data">
+            <!-- Client Details -->
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+
+            <!-- Services -->
+            <label for="services">Select the Services You Need:</label>
+            <select id="services" name="services[]" multiple required>
+                <option value="software-development">Software Development</option>
+                <option value="web-design">Web Design & Development</option>
+                <option value="ai-solutions">AI & Machine Learning Solutions</option>
+                <option value="iot">IoT Integration</option>
+                <option value="it-consulting">IT Consulting</option>
+                <option value="other">Other (Specify Below)</option>
+            </select>
+
+            <!-- Project Details -->
+            <label for="project-description">Project Description:</label>
+            <textarea id="project-description" name="project-description" rows="5" placeholder="Briefly describe your project requirements..." required></textarea>
+
+            <label for="budget">Estimated Budget (Optional):</label>
+            <input type="number" id="budget" name="budget" placeholder="Enter your budget in KES">
+
+            <label for="attachment">Attach Files (Optional):</label>
+            <input type="file" id="attachment" name="attachment" accept=".pdf,.doc,.docx,.png,.jpg,.jpeg,.zip">
+
+            <button type="submit">Submit Request</button>
+
+            <div id="confirmation">
+                Thank you for your request! We will review your submission and get back to you shortly.
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Silver-Works Company. All rights reserved.</p>
+            <p>Innovating the future, one solution at a time.</p>
+            <a href="#top" class="back-to-top">Back to Top</a>
+        </div>
+    </footer>
+    <script src="/script/hire.js"></script>
+</body>
+</html>
